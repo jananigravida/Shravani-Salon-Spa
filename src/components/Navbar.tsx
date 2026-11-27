@@ -36,8 +36,8 @@ export function Navbar({ activePage, onNavigate, onOpenBooking }: NavbarProps) {
     <header
       className={`sticky top-0 z-40 transition-colors duration-200 border-b ${
         scrolled
-          ? 'bg-[#FFF9F4]/95 backdrop-blur-md border-[#EDE1DB]'
-          : 'bg-[#FFF9F4] border-[#EDE1DB]/70'
+          ? 'bg-[#E6F2FA]/95 backdrop-blur-md border-[#CBE0EE]'
+          : 'bg-[#E6F2FA] border-[#CBE0EE]/80'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between gap-8">
@@ -92,7 +92,7 @@ export function Navbar({ activePage, onNavigate, onOpenBooking }: NavbarProps) {
             onClick={() => setMobileMenuOpen((prev) => !prev)}
             aria-expanded={mobileMenuOpen}
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
-            className="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-md text-[#30262A] hover:bg-[#FBF1F4] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-[#C9A46A]"
+            className="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-md text-[#30262A] hover:bg-[#D5E9F6] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-[#C9A46A]"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -101,7 +101,7 @@ export function Navbar({ activePage, onNavigate, onOpenBooking }: NavbarProps) {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#FFF9F4] border-b border-[#EDE1DB] px-4 pb-6 pt-3">
+        <div className="lg:hidden bg-[#E6F2FA] border-b border-[#CBE0EE] px-4 pb-6 pt-3">
           <nav aria-label="Mobile Navigation" className="flex flex-col space-y-1">
             {NAV_ITEMS.map((item) => {
               const isActive = activePage === item.id;
@@ -112,15 +112,15 @@ export function Navbar({ activePage, onNavigate, onOpenBooking }: NavbarProps) {
                   onClick={() => handleSelectPage(item.id)}
                   className={`w-full text-left px-3 py-3 text-base font-medium rounded-md transition-colors cursor-pointer ${
                     isActive
-                      ? 'bg-[#FBF1F4] text-[#30262A]'
-                      : 'text-[#5E5054] hover:bg-[#FBF1F4]/60 hover:text-[#30262A]'
+                      ? 'bg-[#D5E9F6] text-[#30262A]'
+                      : 'text-[#5E5054] hover:bg-[#D5E9F6]/60 hover:text-[#30262A]'
                   }`}
                 >
                   {item.label}
                 </button>
               );
             })}
-            <div className="pt-3 mt-2 border-t border-[#EDE1DB]">
+            <div className="pt-3 mt-2 border-t border-[#CBE0EE]">
               <button
                 type="button"
                 onClick={() => {
