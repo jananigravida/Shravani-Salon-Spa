@@ -28,6 +28,13 @@ export const IMAGES = {
   hairStyling: '/src/assets/images/service_hair_styling_1795770184876.jpg',
   spaSkincare: '/src/assets/images/service_spa_skincare_1795770184515.jpg',
   academyTraining: '/src/assets/images/academy_beauty_training_1795770185895.jpg',
+  serviceHairCare: '/src/assets/images/service_hair_care_1795773371551.jpg',
+  serviceHairBlowout: '/src/assets/images/service_hair_blowout_1795773372116.jpg',
+  serviceFacialGlow: '/src/assets/images/service_facial_glow_1795773372328.jpg',
+  serviceIndianBridal: '/src/assets/images/service_indian_bridal_1795773373013.jpg',
+  servicePartyMakeup: '/src/assets/images/service_party_makeup_1795773373562.jpg',
+  serviceBeautyCare: '/src/assets/images/service_parlour_beauty_care_1795773373850.jpg',
+  serviceSpaRelaxation: '/src/assets/images/service_spa_relaxation_1795773375504.jpg',
 } as const;
 
 export function buildWhatsAppUrl(message: string): string {
@@ -59,8 +66,8 @@ export const SUGGESTED_SERVICES: SuggestedService[] = [
       'Placeholder category for nourishing scalp and hair care rituals tailored to individual hair needs.',
     placeholderNote:
       'Specific hair care treatments, durations, and pricing are customizable placeholders — please confirm availability directly with the salon.',
-    image: IMAGES.hairStyling,
-    imageAlt: 'Warm sunlit hair care styling station with ceramic bottles and champagne gold mirror',
+    image: IMAGES.serviceHairCare,
+    imageAlt: 'Botanical hair mask bowl, amber scalp oil dropper, and wooden comb on salon counter',
   },
   {
     id: 'hair-styling',
@@ -72,8 +79,8 @@ export const SUGGESTED_SERVICES: SuggestedService[] = [
       'Placeholder category for everyday cuts, blowouts, and occasion hair styling sessions.',
     placeholderNote:
       'Specific haircut, finishing, and event styling options to be confirmed directly with our stylists.',
-    image: IMAGES.heroSalon,
-    imageAlt: 'Blush velvet styling chairs and arched champagne mirrors inside a modern salon',
+    image: IMAGES.serviceHairBlowout,
+    imageAlt: 'Hairstylists creating glossy blowout waves in front of champagne gold salon mirrors',
   },
   {
     id: 'skin-care',
@@ -98,8 +105,8 @@ export const SUGGESTED_SERVICES: SuggestedService[] = [
       'Placeholder category for calming facial sessions designed to refresh and brighten the complexion.',
     placeholderNote:
       'Facial varieties, session lengths, and pricing are customizable — contact us on WhatsApp for current offerings.',
-    image: IMAGES.spaSkincare,
-    imageAlt: 'Warm candlelit facial suite with travertine stone counter and rolled towels',
+    image: IMAGES.serviceFacialGlow,
+    imageAlt: 'Client relaxing on warm spa bed during a soothing candlelit facial mask treatment',
   },
   {
     id: 'bridal-makeup',
@@ -111,8 +118,8 @@ export const SUGGESTED_SERVICES: SuggestedService[] = [
       'Placeholder category for bespoke bridal preparation, wedding-day makeup, and occasion readiness.',
     placeholderNote:
       'Bridal consultation details, trial availability, and package inclusions are confirmed directly upon enquiry.',
-    image: IMAGES.bridalMakeup,
-    imageAlt: 'Indian bridal makeup artistry vanity with fine brushes and champagne gold compacts',
+    image: IMAGES.serviceIndianBridal,
+    imageAlt: 'Indian bride in ivory and gold receiving delicate bridal makeup finishing touches',
   },
   {
     id: 'makeup-services',
@@ -124,8 +131,8 @@ export const SUGGESTED_SERVICES: SuggestedService[] = [
       'Placeholder category for party, engagement, and festive makeup artistry tailored to your look.',
     placeholderNote:
       'Occasion makeup options and appointment slots are subject to salon confirmation.',
-    image: IMAGES.bridalMakeup,
-    imageAlt: 'Curated blush and gold makeup artistry collection arranged on warm ivory silk',
+    image: IMAGES.servicePartyMakeup,
+    imageAlt: 'Makeup artist applying luminous blush to a smiling client in a warm beauty studio',
   },
   {
     id: 'beauty-care',
@@ -137,8 +144,8 @@ export const SUGGESTED_SERVICES: SuggestedService[] = [
       'Placeholder category for classic parlour grooming and essential everyday beauty upkeep.',
     placeholderNote:
       'Full parlour care menu and service rates are editable placeholders — call or message for details.',
-    image: IMAGES.heroSalon,
-    imageAlt: 'Sunlit luxury beauty parlour lounge and grooming stations',
+    image: IMAGES.serviceBeautyCare,
+    imageAlt: 'Manicure and beauty grooming setup with rose quartz roller, tools, and hand cream',
   },
   {
     id: 'spa-relaxation',
@@ -150,8 +157,8 @@ export const SUGGESTED_SERVICES: SuggestedService[] = [
       'Placeholder category for tranquil spa self-care sessions in a calm, unhurried setting.',
     placeholderNote:
       'Spa treatment availability, duration, and rates are confirmed directly with the salon team.',
-    image: IMAGES.spaSkincare,
-    imageAlt: 'Quiet spa relaxation suite with white orchid and warm candlelight',
+    image: IMAGES.serviceSpaRelaxation,
+    imageAlt: 'Calm spa lounge with warm basalt massage stones, candle, rolled towels, and herbal tea',
   },
 ];
 
