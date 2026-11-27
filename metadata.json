@@ -1,0 +1,6 @@
+{
+  "name": "Shravani Salon & Spa | Parlour | Academy - Training Institute",
+  "description": "Luxury beauty salon, parlour, spa, and beauty training academy in Mancherial, Telangana. Book salon appointments or enquire about beauty courses via WhatsApp or phone.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
