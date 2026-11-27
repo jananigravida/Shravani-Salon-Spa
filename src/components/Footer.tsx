@@ -138,7 +138,17 @@ export function Footer({ onNavigate, onOpenBooking }: FooterProps) {
           <p>
             © {new Date().getFullYear()} {BUSINESS_INFO.fullName}. All rights reserved.
           </p>
-          <p>Market Road, Iqbal Ahmed Nagar, Mancherial, Telangana 504208</p>
+          <p>
+            This site is designed by{' '}
+            <a
+              href="https://wa.me/917702798123"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#E8B8C5] underline underline-offset-4 hover:text-[#FFF9F4] transition-colors"
+            >
+              RP
+            </a>
+          </p>
         </div>
       </div>
     </footer>

@@ -36,8 +36,8 @@ export function Navbar({ activePage, onNavigate, onOpenBooking }: NavbarProps) {
     <header
       className={`sticky top-0 z-40 transition-colors duration-200 border-b ${
         scrolled
-          ? 'bg-[#E6F2FA]/95 backdrop-blur-md border-[#CBE0EE]'
-          : 'bg-[#E6F2FA] border-[#CBE0EE]/80'
+          ? 'bg-[#30262A]/95 backdrop-blur-md border-[#46383D]'
+          : 'bg-[#30262A] border-[#46383D]'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between gap-8">
@@ -45,7 +45,7 @@ export function Navbar({ activePage, onNavigate, onOpenBooking }: NavbarProps) {
         <button
           type="button"
           onClick={() => handleSelectPage('home')}
-          className="font-display text-xl sm:text-2xl font-semibold tracking-tight text-[#30262A] whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C9A46A] cursor-pointer"
+          className="font-display text-[1.275rem] sm:text-[1.53rem] font-bold tracking-tight text-[#FFF9F4] whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C9A46A] cursor-pointer"
         >
           Shravani Salon &amp; Spa
         </button>
@@ -61,8 +61,8 @@ export function Navbar({ activePage, onNavigate, onOpenBooking }: NavbarProps) {
                 onClick={() => handleSelectPage(item.id)}
                 className={`relative py-2 text-sm font-medium whitespace-nowrap shrink-0 transition-colors duration-150 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C9A46A] ${
                   isActive
-                    ? 'text-[#30262A]'
-                    : 'text-[#5E5054] hover:text-[#30262A]'
+                    ? 'text-[#FFF9F4]'
+                    : 'text-[#D8CDD0] hover:text-[#FFF9F4]'
                 }`}
               >
                 {item.label}
@@ -82,7 +82,7 @@ export function Navbar({ activePage, onNavigate, onOpenBooking }: NavbarProps) {
           <button
             type="button"
             onClick={() => onOpenBooking()}
-            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium bg-[#30262A] text-[#FFF9F4] rounded-md hover:bg-[#46383D] transition-colors duration-150 whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A46A]"
+            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium bg-[#E8B8C5] text-[#30262A] rounded-md hover:bg-[#f0cad4] transition-colors duration-150 whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A46A]"
           >
             Book an Appointment
           </button>
@@ -92,7 +92,7 @@ export function Navbar({ activePage, onNavigate, onOpenBooking }: NavbarProps) {
             onClick={() => setMobileMenuOpen((prev) => !prev)}
             aria-expanded={mobileMenuOpen}
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
-            className="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-md text-[#30262A] hover:bg-[#D5E9F6] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-[#C9A46A]"
+            className="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-md text-[#FFF9F4] hover:bg-[#46383D] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-[#C9A46A]"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -101,7 +101,7 @@ export function Navbar({ activePage, onNavigate, onOpenBooking }: NavbarProps) {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#E6F2FA] border-b border-[#CBE0EE] px-4 pb-6 pt-3">
+        <div className="lg:hidden bg-[#30262A] border-b border-[#46383D] px-4 pb-6 pt-3">
           <nav aria-label="Mobile Navigation" className="flex flex-col space-y-1">
             {NAV_ITEMS.map((item) => {
               const isActive = activePage === item.id;
@@ -112,22 +112,22 @@ export function Navbar({ activePage, onNavigate, onOpenBooking }: NavbarProps) {
                   onClick={() => handleSelectPage(item.id)}
                   className={`w-full text-left px-3 py-3 text-base font-medium rounded-md transition-colors cursor-pointer ${
                     isActive
-                      ? 'bg-[#D5E9F6] text-[#30262A]'
-                      : 'text-[#5E5054] hover:bg-[#D5E9F6]/60 hover:text-[#30262A]'
+                      ? 'bg-[#46383D] text-[#FFF9F4]'
+                      : 'text-[#D8CDD0] hover:bg-[#46383D]/60 hover:text-[#FFF9F4]'
                   }`}
                 >
                   {item.label}
                 </button>
               );
             })}
-            <div className="pt-3 mt-2 border-t border-[#CBE0EE]">
+            <div className="pt-3 mt-2 border-t border-[#46383D]">
               <button
                 type="button"
                 onClick={() => {
                   setMobileMenuOpen(false);
                   onOpenBooking();
                 }}
-                className="w-full py-3 px-5 text-sm font-medium bg-[#30262A] text-[#FFF9F4] rounded-md hover:bg-[#46383D] transition-colors cursor-pointer"
+                className="w-full py-3 px-5 text-sm font-medium bg-[#E8B8C5] text-[#30262A] rounded-md hover:bg-[#f0cad4] transition-colors cursor-pointer"
               >
                 Book an Appointment
               </button>
